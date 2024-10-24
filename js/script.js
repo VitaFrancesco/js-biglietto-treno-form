@@ -64,7 +64,7 @@ formCalcPrice.addEventListener('submit', function (event) {
         tdTypeTicket.innerHTML = age === 'underage' ? 'Biglietto ridotto' : (age === 'over65' ? 'Biglietto over 65' : 'Biglietto standard');
         tdCarriageUser.innerHTML = parseInt((Math.random() * 10) + 1);
         tdCodeUser.innerHTML = parseInt((Math.random() * 99999) +1);
-        // tdPriceTicket.innerHTML = new Intl.NumberFormat('it-IT', { style: 'currency', currency: 'EUR' }).format(price);
+        tdPriceTicket.innerHTML = new Intl.NumberFormat('it-IT', { style: 'currency', currency: 'EUR' }).format(price);
         
         // ****reset automatico form dopo invio
         userName.value = "";
